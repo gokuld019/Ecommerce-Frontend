@@ -1,11 +1,26 @@
+<h1 align="center" id="title">E-Commerce Project</h1>
 
-In the project directory, you can run:
+<h2>🛠️ Installation Steps:</h2>
 
-### `npm start`
+<p>1. Install Packages</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```
+npm install
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<p>2. In the projectory directory you can run</p>
 
+```
+npm start
+```
+
+  
+  
+<h2>💻 Built with</h2>
+
+Technologies used in the project:
+
+*   NodeJs
+*   ReactJs
+*   MongoDB
+*   ExpressJs
