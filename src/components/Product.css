@@ -1,0 +1,35 @@
+
+.Product-gallery div:hover {
+    transform: translateY(-5px);
+}
+
+.Product-gallery img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+
+
+.search-bar { 
+    position: absolute;  /* Use absolute positioning */
+    top: 25px;           /* Adjust the distance from the top */
+    left: 50%;           /* Center it horizontally */
+    transform: translateX(-50%);  /* Offset to ensure it's centered */
+    width: 80%;          /* Width of the search bar, adjust as needed */
+    max-width: 600px;    /* Optional: Set a maximum width for the search input */
+    border-radius: 100%;
+}
+
+.search-input {
+    width: 100%;         /* Make the input take up the full width of its container */
+    padding: 10px;       /* Add padding for better spacing inside the input */
+    font-size: 16px;     /* Adjust font size */
+    border: 1px solid black;  /* Border for input */
+    border-radius: 4px;  /* Rounded corners */
+    box-sizing: border-box;  /* Include padding in the width calculation */
+    border-radius: 20px;
+    border-color: rgb(157, 154, 154);
+
+}
+
+

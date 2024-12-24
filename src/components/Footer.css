@@ -1,0 +1,98 @@
+/* Footer.css */
+
+/* Main footer styles */
+.footer {
+  background-color: #f2f2f2; /* Light ash gray background */
+  color: #333; /* Dark text color for better contrast */
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 30px;
+  justify-items: start;
+}
+
+.footer-section {
+  padding: 10px;
+}
+
+.footer-section h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #090909; /* Accent color (orange) */
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  line-height: 1.5;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li:hover {
+  color: #ff8c00; /* Hover color */
+}
+
+/* Footer bottom section */
+.footer-bottom {
+  background-color: #e0e0e0; /* Lighter gray for the bottom section */
+  padding: 20px 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.footer-bottom h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #040404; /* Accent color */
+  margin-bottom: 10px;
+}
+
+.footer-bottom p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #333; /* Darker text for visibility */
+  margin: 0;
+}
+
+.footer-bottom p a {
+  color: #ff8c00;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom p a:hover {
+  color: #ffffff; /* White on hover for contrast */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .footer-container {
+      grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+      grid-template-columns: 1fr;
+  }
+
+  .footer-bottom h4 {
+      font-size: 1rem;
+  }
+
+  .footer-bottom p {
+      font-size: 0.8rem;
+  }
+}

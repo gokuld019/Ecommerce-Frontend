@@ -1,0 +1,161 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px 32px;
+    color: black;
+    position: relative;
+    height: 140px;
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: #080808;
+}
+
+.navbar-list {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    margin-top: 70px;
+}
+
+.navbar-item {
+    position: relative;
+    cursor: pointer;
+    font-size: large;
+}
+
+.navbar-cart{
+    position: relative;
+    cursor: pointer;
+    color: black;
+    size: 50px;
+}
+
+.profile-icon{
+   font-size: 20px;
+}
+.navbar-list .navbar-item:last-child {
+    margin-left: auto; /* Push the cart item to the far right */
+}
+
+
+.navbar-link {
+    text-decoration: none;
+    color: #0a0a0a;
+    padding: 0.5rem;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.navbar-link:hover {
+    color: #4e73df;
+}
+
+/* Dropdown Styling */
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    color: #333333;
+    padding: 1rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    border-radius: 8px;
+    z-index: 1000;
+}
+
+.dropdown-account {
+    width: 280px;
+}
+
+.dropdown-section {
+    margin-bottom: 1rem;
+}
+
+.dropdown h4 {
+    margin: 0 0 0.5rem;
+    font-size: 1rem;
+    color: #f0a500;
+}
+
+.dropdown-item {
+    display: block;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+    color: #333333;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.dropdown-item:hover {
+    color: #f0a500;
+}
+
+/* Search Bar Styling */
+
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .navbar-list {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    .search-bar {
+        width: 100%;
+    }
+    
+    .search-input {
+        width: calc(100% - 80px);
+    }
+}
+
+.dropdown-section {
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #ddd; /* Subtle border to separate sections */
+}
+
+.dropdown-section:last-child {
+    border-bottom: none; /* Remove border for the last section */
+}
+
+.dropdown-section h4 {
+    margin: 0 0 0.5rem;
+    font-size: 1rem;
+    color: #333; /* Dark color for the header */
+    font-weight: bold;
+}
+
+.dropdown-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-section ul li {
+    margin-bottom: 0.5rem; /* Space between items */
+}
+
+.dropdown-section ul li a {
+    text-decoration: none;
+    color: #555; /* Medium color for the links */
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.dropdown-section ul li a:hover {
+    color: #f0a500; /* Highlight color on hover */
+}
+
+/* Adjusting dropdown width */
+.dropdown {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Space between sections */
+    max-width: 600px; /* Ensure the dropdown doesn't get too wide */
+}
