@@ -14,7 +14,7 @@ npm install
 npm start
 ```
 <h2>💻 Project UI</h2>
-<img src="https://drive.google.com/file/d/1ZGISFMuS8Ak48w2C2Qjn4IaR-raIvRYz/view?usp=sharing">
+<img src="./i2.PNG">
   
 <h2>💻 Built with</h2>
 
